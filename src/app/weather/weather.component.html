@@ -1,0 +1,11 @@
+<div class="weather-wrapper gray-80 body-sm" *ngIf="showWeather">
+  <p class="weather-title">Current weather in Portland, OR</p>
+    <div>
+      <div class="weather-icon-wrapper d-inline-block">
+        <img src="{{ currentIcon }}" alt="weather icon" />
+      </div>
+      <p>
+        {{ currentMessage }}. {{ currentTemp }}ºF
+      </p>
+    </div>
+</div>
